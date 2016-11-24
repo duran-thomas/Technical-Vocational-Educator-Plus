@@ -1,0 +1,22 @@
+Description 
+Technical & Vocational Educator Plus (TVEP)is a Caribbean companyproviding tutoring and computing services
+that are made up of the technical, vocational, educational and professional skills of the creators of the website
+(i.e. the technical skills of you, the team members). Your team is required to build a business service website for TVEP. 
+
+Content 
+Amongst other things, the website should include the following content:
+
+1. A Welcome Page – this may be in the form of a Splash Page but a welcome paragraph must properly greet possible customers and   users of your web siteie. students and parents.
+
+2. A Member Section – a personal section for each member of the team. Each member will be described by: Name, ID Number, Age, Citizenship & CSEC Courses (or GSAT subjects)you are competent at teaching or Computing Expertise eg PC Repairs, Networking 3 x Traits/Skills of that Member that makes them suitable to teach the course offered.
+
+3. A Service Catalogue Section – that will list all of the services and subjects
+provided by the company along with a description, estimated cost and estimated duration(eg in weeks) for each one. 
+
+4. An About Section – that will give a brief history for TVEPplus contact information for the company.
+
+5. A Feedback Section – that will give all users and potential customers a chance to send feedback on tutorsand team members,and general queries to the company's email address via a properly oriented Form after validation is done. 
+
+6. A ProForma Request Section – that will give potential customers a chance to request one or more of the company's Services(courses); provide more commentary on the details of their request, provide their contact name, company name, email address and phone number; and be given the Estimated Total for all Services (ie cumulative calculation desirable) requested before sending the Services Request via a Form to the company's email address. 
+
+7. A Sample Test Section – This will provide sample tests that users can take organized by categories. The test pages should be createdwith HTML, CSSand Javascript. For example, GSAT Math, CSEC English etc. Each sample test should consist of at least five questions andshould provide a score at the end. Questions types may include multiplechoice, true false, fill in the blanks. 
