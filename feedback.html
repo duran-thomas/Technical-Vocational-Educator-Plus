@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Feedback</title>
+	<link href="https://fonts.googleapis.com/css?family=Delius+Unicase" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet"> 
+	<script type="text/javascript">	
+		function validateForm() {
+			var x = document.forms["myForm"]["name"].value;
+			if (x == null || x == "") {
+				alert("Name must be filled out!");
+				return false;
+			}
+			var d = document.forms["myForm"]["email"].value;
+			if (d == null || d == "") {
+				alert("Email must be filled out!");
+				return false;
+			}
+			var e = document.forms["myForm"]["comment"].value;
+			if (e == null || e == "") {
+				alert("You must fill out the comments section in order to submit");
+				return false;
+			}
+			else {
+				alert("Submitted!");
+			}
+		}
+	</script>
+</head>
+<body style="background-color: #e0e0e0">
+	<div class="page">
+		<div class="header">
+			<h1 class="head">Technical & Vocational Educator Plus</h1>
+		</div>
+		<div class="nav">
+			<ul class="links">
+				<li class="nav1"><a class="nav"  href="home.html">Home</a></li>
+				<li class="nav1"><a class="nav"  href="tutors.html">Tutors</a></li>
+				<li class="nav1"><a class="nav"  href="catalog.html">Service</a></li>
+				<li class="nav1"><a class="nav"  href="aboutus.html">About Us</a></li>
+				<li class="nav1"><a class="nav"  href="proforma.html">ProForma Request</a></li>
+				<li class="nav1"><a class="nav"  href="quiz.html">Quiz</a></li>
+			</ul>
+		</div>
+		<div class="back">
+			<div class="info">
+				<section>
+					<form name="myForm"  onsubmit="return validateForm()" method="post">
+						<h1> Feedback </h1>
+						<hr>
+						<p> If you have a concern or comment for any of our tutors, please enter it below.Potential customers, feel free to leave a comment too. The email address of our tutors are also available at the end of the page for private contact! </p><br>
+						<label for="name">Name</label><br>
+						<input type="text" id="name" name="name"><br>
+						<br>
+						<label for="email">Email Address</label><br>
+						<input type="text" id="email" name="email"><br><br><br>
+						Concerns or Comments : <br><textarea rows="10" cols="50" name="comment"> 
+					</textarea><br><br>
+					<br><input type="submit" value="Submit">
+				</form>
+				<br>
+				<div> <a href="mailto:shenealmccourtie@gmail.com?Subject=Vtech%20Customer" target="_top">Sheneal </a>&nbsp;
+					<a href="mailto:aliciaschool@outlook.com?Subject=Vtech%20Customer" target="_top">Alicia</a>&nbsp; &nbsp; <a href="mailto:odaner9@gmail.com?Subject=Vtech%20Customer" target="_top">Odane</a>&nbsp;
+					<a href="mailto:blairakelia@yahoo.com?Subject=Vtech%20Customer" target="_top">Akelia</a>&nbsp;&nbsp;<a href="mailto:duranthomas95@gmail.com?Subject=Vtech%20Customer" target="_top">Duran</a>&nbsp;</div> 
+				</section>
+			</div>
+		</div>
+	</div>
+	<br>
+	<div class="footer">
+		<p>&#169;Copyright 2016 ADOSA GROUP</p>
+	</div>
+</body>
+</html>

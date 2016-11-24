@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Proforma</title>
+	<link href="https://fonts.googleapis.com/css?family=Delius+Unicase" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+		<script type="text/javascript">
+		
+			function totalIt() {
+				var input = document.getElementsByName("product");
+				var total = 0;
+				for (var i = 0; i < input.length; i++) {
+					if (input[i].checked) {
+						total += parseFloat(input[i].value);
+					}
+				}
+				document.getElementById("total").value = "$" + total.toFixed(2);
+			}
+
+			function alert()
+			{
+				alert("Request Has Been Submitted");
+			}		
+
+		</script>
+	</head>
+	<body style="background-color: #e0e0e0">
+		<div class="page">
+			<div class="header">
+				<h1 class="head">Technical & Vocational Educator Plus</h1>
+			</div>
+			<div class="nav">
+				<ul class="links">
+					<li class="nav1"><a class="nav"  href="home.html">Home</a></li>
+					<li class="nav1"><a class="nav"  href="tutors.html">Tutors</a></li>
+					<li class="nav1"><a class="nav"  href="catalog.html">Service</a></li>
+					<li class="nav1"><a class="nav"  href="aboutus.html">About Us</a></li>	
+					<li class="nav1"><a class="nav"  href="quiz.html">Quiz</a></li>
+					<li class="nav1"><a class="nav"  href="feedback.html">Feedback</a></li>
+				</ul>
+			</div>
+			<div class="back">
+				<div class="info">
+
+					<form name = "proforma">
+						<h2>ProForma Request</h2>
+
+						<p> Check all the Courses You Would Like From The List Below</p><br/>
+						<div class="choice">
+							<form action="mailto:someone@example.com" id="theForm" method="post">
+								<fieldset>
+									<legend>
+										Courses
+									</legend>
+									<label>
+										<input name="product" value="4000" type="checkbox" id="p1" onclick="totalIt()"/>
+										CSEC Mathematics
+									</label>
+									<br>
+									<label>
+										<input name="product" value="4000" type="checkbox" id="p2" onclick="totalIt()"/>
+										CSEC Physics
+									</label>
+									<br>
+									<label>
+										<input name="product" value="3750" type="checkbox" id="p3" onclick="totalIt()"/>
+										CSEC Information Technology
+									</label>
+									<br>
+									<label>
+									<br>
+									<label>
+										<input name="product" value="2500" type="checkbox" id="p4" onclick="totalIt()"/>
+										GSAT Mathematics
+									</label>
+									<br>
+									<label>
+										<input name="product" value="2500" type="checkbox" id="p5" onclick="totalIt()"/>
+										GSAT Science
+									</label>
+									<br>
+									<label>
+										<input name="product" value="2500" type="checkbox" id="p6" onclick="totalIt()"/>
+										GSAT Social Studies
+									</label>
+									<br>
+									<label>
+										<input name="product" value="2500" type="checkbox" id="p6" onclick="totalIt()"/>
+										GSAT English
+									</label>
+									<label>
+									<br>
+										Total 
+										<input value="$0.00" readonly="readonly" type="text" id="total"/>
+									</label>
+								</fieldset>
+						</div>
+
+						<br><br>
+
+						<label>Please provide detail:</label><br>
+						<textarea rows="10" cols="50">
+						</textarea>
+						<br><br>
+
+						<label>First Name:</label><br>
+						<input type="text" id="fname" name="firstname" placeholder="First Name" required><br><br>
+
+						<label>Last Name:</label><br>
+						<input type="text" id="lname" name="lastname" placeholder="Last Name" required><br><br>
+
+						<label>Company Name:</label><br>
+						<input type="text" id="company" name="companyName" placeholder="Company" required><br><br>
+
+						<label> Email Address:</label><br>
+						<input type="text" name="email" placeholder="someone@email.com" required>
+						<br>
+						<br>
+
+						<label>Tel. Number:</label><br>
+						<input type="text" name="Tel. Number" placeholder="1(876)555-5555" maxlength="12" required>
+						<br><br>	
+
+						<input type="submit" value="Submit" onclick="alert()"><br>
+					</form>
+
+				</div>
+			</div>
+		</div>
+		<br>
+		<div class="footer">
+			<p>&#169;Copyright 2016 ADOSA GROUP</p>
+		</div>
+	</body>
+	</html>
