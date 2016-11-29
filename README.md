@@ -1,2 +1,2 @@
 # Technical-Vocational-Educator-Plus
-Web Programming Asignment 
+Web Programming Assignment 
